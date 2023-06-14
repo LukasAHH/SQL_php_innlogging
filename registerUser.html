@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login with PHP</title>
+</head>
+<body>
+    <form method="post" action="registerUser.php" onsubmit="return getValidation()">
+        <p>Log in to access webpage</p>
+        <p id="errorMessage" class="false"></p>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" oninput="validateUserInfo()" /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" oninput="validateUserInfo()" /><br />
+
+        <label for="passwordAgain">Re-enter password:</label>
+        <input type="password" name="passwordAgain" id="passwordAgain" oninput="validateUserInfo()" /><br />
+
+        <input type="submit" name="submit" value="Register" />
+
+    </form>
+    <button id="testButton" onclick="validateUserInfo()">Test</button>
+    <p>Already have a user? <a href="index.html">Click here</a> to return to login page</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
