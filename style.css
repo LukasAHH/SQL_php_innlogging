@@ -3,6 +3,10 @@ html {
     padding: 0;
 }
 
+#errorMessage {
+    width: fit-content;
+}
+
 .false {
     background-color: red;
 }
